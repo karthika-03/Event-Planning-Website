@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/User_queries.css">
+</head>
+<body>
+    <!-- header section starts -->
+    <header class="ad-header">
+        <a href="#" class="logo"><span>3</span>Knots</a>
+
+        <!-- User Icon for showing dropdown -->
+        <div class="ad-icon" onclick="toggleDropdown()">
+            <i class="fas fa-user"></i>
+        </div>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+        <!-- Dropdown menu -->
+        <div id="dropdown" class="dropdown-content">
+            <a href="#" onclick="logout()">Logout</a>
+            <a href="#" onclick="toggleDropdown()">Cancel</a>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="admin.html">User Details</a>
+        <a href="user_booking.html">User Booking</a>
+        <a href="user_reviews.html">User Reviews</a>
+        <a href="user_queries.html">User Queries</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Admin Dashboard - User Queries</h1>
+    
+        <!-- Query statistics -->
+        <div class="query-stats">
+            <div class="stat-item">
+                <div id="totalQueriesCircle" class="stat-circle">0</div>
+                <p>Total Queries</p>
+            </div>
+            
+            <div class="stat-item">
+                <div id="solvedQueriesCircle" class="stat-circle">0</div>
+                <p>Solved Queries</p>
+            </div>
+            
+            <div class="stat-item">
+                <div id="unsolvedQueriesCircle" class="stat-circle">0</div>
+                <p>Unsolved Queries</p>
+            </div>
+        </div>
+        
+    
+        <!-- Queries Table -->
+        <table id="contactsTable" class="retable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Subject</th>
+                    <th>Message</th>
+                    <th>Created At</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Fetched queries will be injected here by JS -->
+            </tbody>
+        </table>
+    </div>
+    
+
+    <script src="js/view_queries.js"></script>
+</body>
+</html>

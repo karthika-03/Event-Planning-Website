@@ -1,0 +1,107 @@
+/* formStyles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    max-width: 500px; /* Set a max width */
+    margin: 0 auto;   /* Center the form horizontally */
+    padding: 20px;    /* Add padding inside the form */
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    overflow: auto;  /* Enable scrolling if content overflows */
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input:focus, select:focus {
+    border-color: #3a86ff;
+}
+
+input[type="submit"] {
+    background-color: #3a86ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0047ab;
+}
+
+/* General form styling to limit width and center it */
+
+
+/* Form popup for scrollable content */
+.form-popup {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 90vh; /* Prevents the form from going off the screen vertically */
+    overflow-y: auto; /* Allows vertical scrolling if content is too large */
+    width: 90%; /* Adjust width for better fit on the screen */
+    max-width: 600px; /* Maximum width for larger screens */
+    background-color: #fff; /* Same background color */
+    border-radius: 8px; /* Consistent rounded corners */
+    padding: 20px; /* Padding inside the form */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for effect */
+}
+
+/* Responsive form styling for smaller screens */
+@media (max-width: 768px) {
+    form {
+        max-width: 90%;  /* Allow the form to use more screen space on mobile */
+    }
+}
+
+/* Responsive image styling to make sure images don't overflow */
+img {
+    max-width: 100%; /* Ensures images don’t exceed their container width */
+    height: auto;    /* Keeps the aspect ratio intact */
+}
+
+/* Container fix for overflow issues */
+.container {
+    overflow: hidden; /* Prevents content from overflowing out of the container */
+}
+
+/* Additional container padding and margin for better layout */
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Optional: limit container width for larger screens */
+}
+
+/* Optional: Make container responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Smaller padding on mobile devices */
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTO</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+<!-- font awesome  cdn link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- custom css file link -->
+<link rel="stylesheet" href="css/contact.css">
+
+</head>
+<body>
+    <!-- contact section starts -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <form action="php/submit_contact.php" method="POST">
+        <div class="inputBox">
+            <input type="text" id="name" name="name" placeholder="Name" autocomplete="name">
+            <input type="email" id="email" name="email" placeholder="Email" autocomplete="email">
+        </div>
+        <div class="inputBox">
+            <input type="number" name="phone_number" placeholder="number">
+            <input type="text" name="subject" placeholder="subject">
+        </div>
+        <textarea name="message" placeholder="your message" cols="30" rows="10" required></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>    
+</section>
+
+<script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+<script type="module" src="js/contact.js"></script>
+<!-- contact section ends -->
+ </body>

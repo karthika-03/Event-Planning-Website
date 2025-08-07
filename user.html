@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3Knots</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+<!-- font awesome  cdn link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- custom css file link -->
+<link rel="stylesheet" href="css/user.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="css/formStyles.css">
+<link rel="stylesheet" href="css/chatbot.css">
+<link rel="stylesheet" href="css/translatorh.css">
+
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+
+</head>
+<body>
+    
+<!-- header section starts -->
+<header class="header">
+    <a href="#" class="logo"><span>3</span>Knots</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#service">service</a>
+        <!-- <a href="#about">about</a> -->
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <!-- User Icon for showing dropdown -->
+    <div class="user-icon" onclick="toggleDropdown()">
+        <i class="fas fa-user"></i>
+    </div>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <!-- Dropdown menu -->
+    <div id="dropdown" class="dropdown-content">
+        <a href="#" onclick="logout()">Logout</a>
+        <a href="#" onclick="toggleDropdown()">Cancel</a>
+    </div>
+</header>
+<!-- header section ends -->
+
+
+<!-- home section starts -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>its time to celebrate! the best <span>event organizers</span></h3>        
+    </div>
+
+    <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assests/slide-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assests/slide-2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assests/slide-3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assests/slide-4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assests/slide-5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="assests/slide-6.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- service section starts -->
+
+<section class="service" id="service">
+
+    <header class="hero-section">
+        <div class="content">
+            <h1 data-original="our services">Our Services</h1>
+            <p data-original="We offer a wide range of customized solutions, from event planning to design services, tailored to meet your unique needs and bring your vision to life.">We offer a wide range of customized solutions, from event planning to design services, tailored to meet your unique needs and bring your vision to life.</p>
+            <a href="service.html" class="cta-button" data-original="View Services">View Services</a>
+        </div>
+    </header>
+
+</section>
+<!-- service section ends -->
+
+<!-- about section starts -->
+
+<!-- <section class="about" id="about">
+    <div class="container">
+        <div class="image-box">
+            <img src="https://cdn.eventplanner.net/img4/lp/wedding/lp-wedding-venue@2x.jpg" alt="Fireworks Event">
+        </div>
+        <div class="text-box">
+            <h1>About us</h1>
+            <p>We are dedicated to crafting meaningful connections through innovative designs and exceptional service, ensuring every moment is as unique as you are.</p>
+            <button class="cta-button">About us</button>
+        </div>
+    </div>
+</section> -->
+<!-- about section ends -->
+
+<!-- about section starts -->
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="image-box">
+            <img src="https://cdn.eventplanner.net/img4/lp/wedding/lp-wedding-venue@2x.jpg" alt="Fireworks Event">
+        </div>
+        <div class="text-box">
+            <h1 data-original="Gallery">Gallery</h1>
+            <p data-original="Explore our gallery for a glimpse into the stunning events we’ve brought to life. From intimate gatherings to grand celebrations, each image tells a unique story.">Explore our gallery for a glimpse into the stunning events we’ve brought to life. From intimate gatherings to grand celebrations, each image tells a unique story.</p>
+            <a href="gallery.html" class="cta-button" data-original="View Gallery">View Gallery</a>
+        </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- gallery section starts -->
+
+<!-- <section class="gallery" id="gallery">
+
+    <header class="hero-section">
+        <div class="content">
+            <h1>Gallery</h1>
+            <p>Explore our gallery for a glimpse into the stunning events we’ve brought to life. From intimate gatherings to grand celebrations, each image tells a unique story.</p>
+            <a href="gallery.html" class="cta-button">View Gallery</a>
+        </div>
+    </header>
+
+</section> -->
+
+<!-- gallery section ends -->
+   
+
+<!-- review section starts -->
+
+<section class="review" id="review">
+
+    <div class="container">
+        <div class="text-box">
+            <h1 data-original="Reviews">Reviews</h1>
+            <p data-original="Discover what our clients are saying about their experiences! Read real reviews and see how we’ve helped create unforgettable moments, customized just for them.">Discover what our clients are saying about their experiences! Read real reviews and see how we’ve helped create unforgettable moments, customized just for them.</p>
+            <a href="review.html" class="cta-button" data-original="Post your reviews here">Post Your Reviews Here</a>
+        </div>
+        <div class="image-box">
+            <img src="assests/s4.png" alt="Fireworks Event">
+        </div>
+    </div>
+</section>
+<!-- review section ends -->
+
+<!-- contact section starts -->
+
+<section class="contact" id="contact">
+    <div class="card-container">
+        <div class="card">
+            <div class="card-image">
+                <img src="assests/s3.png" alt="Contact Us">
+            </div>
+            <h2 data-original="Contact us">Contact Us</h2>
+            <br>
+            <a href="contact.html" class="cta-button" data-original="Send a message">Send a Message</a>
+        </div>
+    </div>
+</section>
+<!-- contact section ends -->
+
+<!-- footer section starts -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>branches</h3>
+            <a href="https://www.google.com/maps/search/mariage+hall+in+Tiruppur/@11.1085598,77.3638127,12z/data=!3m1!4b1?authuser=0&entry=ttu"> <i class="fas fa-map-marker-alt"></i> Tirupur </a>
+            <a href="https://www.google.com/maps/place/Namakkal,+Tamil+Nadu/@11.2284872,78.1244851,13z/data=!3m1!4b1!4m6!3m5!1s0x3babce5e3f22014f:0xa0ab89ef32c34a77!8m2!3d11.2193848!4d78.1678418!16zL20vMDJ4ajZq?authuser=0&entry=ttu"> <i class="fas fa-map-marker-alt"></i> Namakkal </a>
+            <a href="https://www.google.com/maps/place/Dharmapuri,+Tamil+Nadu/@12.1269522,78.1308845,14z/data=!3m1!4b1!4m6!3m5!1s0x3bac16f95a63ed01:0x3f2cb64e61c93aef!8m2!3d12.1210997!4d78.1582143!16zL20vMDVuNHl5?authuser=0&entry=ttu"> <i class="fas fa-map-marker-alt"></i> Dharmapuri </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> services </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> gallery </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> 9876543210 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSDbSRLxwKLLPvvwTtFkJhdHJJDntvGLCjlsqzjMSRsKwvRTgtfnsHqTvtLNVDlFZJKwtMJD"> <i class="fas fa-envelope"></i> 3knots22@gmail.com </a>
+            <a href="#"> <i class="fas fa-envelope"></i> 3knnots23@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> tamilnadu, india - 600028 </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="https://www.facebook.com/profile.php?id=100093949153767"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="https://twitter.com/3knots_23"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="https://www.instagram.com/3__knots/"> <i class="fab fa-instagram"></i> instagram </a>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> 3Knots team</span> |all right reserved</div>
+</section>
+
+<!-- footer section ends -->
+
+<!-- theme toggler starts-->
+
+<div class="theme-toggler">
+    
+    <div class="toggle-btn">
+    </div>
+
+    <div class="buttons">
+        <div class="theme-btn" style="background-color: #3867d6;"></div>
+        <div class="theme-btn" style="background-color: #f7b731;"></div>
+        <div class="theme-btn" style="background-color: #ff0033;"></div>
+        <div class="theme-btn" style="background-color: #20bf6b;"></div>
+        <div class="theme-btn" style="background-color: #fa8231;"></div>
+        <div class="theme-btn" style="background-color: #FC427B;"></div>
+    </div>
+</div>
+
+
+                <!-- Language toggle icon -->
+                <div id="language-toggle" onclick="toggleLanguage()">🌐</div>
+
+                <div id="chatbot-container">
+                    <div id="chatbot-icon">💬</div>
+                    <div id="chatbot-popup">
+                        <div id="chatbot-header">
+                            <span>Chat with us</span>
+                            <button id="chatbot-close">&times;</button>
+                        </div>
+                        <div id="chat-messages"></div>
+                        <input type="text" id="chat-input" placeholder="Type your message..." />
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/cart.js"></script>
+<script src="js/form.js"></script>
+<script src="js/chatbot.js"></script>
+<script src="js/translator.js"></script>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- custom js file link -->
+    <script src="js/user.js"></script>
+</body>
+</html>

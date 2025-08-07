@@ -1,0 +1,52 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - good morning
+    - hey there
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - take care
+    - thanks
+
+- intent: ask_service
+  examples: |
+    - What services do you provide?
+    - Can you list your services?
+    - Tell me about your services
+    - What do you offer for weddings?
+
+- intent: ask_service_page
+  examples: |
+    - Can I see the services page?
+    - Show me the services link
+    - Where can I find the services page?
+    - Services link please
+
+- intent: ask_review_page
+  examples: |
+    - I want to see the review page
+    - Show me reviews
+    - Where can I submit feedback?
+    - Review page link
+
+- intent: ask_contact_page
+  examples: |
+    - How can I contact you?
+    - Contact page link please
+    - I need the contact us page
+    - Contact information
+
+- intent: ask_social_media
+  examples: |
+    - Where can I find you on social media?
+    - Do you have social media accounts?
+    - Social media links
+    - Facebook or Instagram link

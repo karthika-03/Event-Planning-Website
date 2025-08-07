@@ -1,0 +1,47 @@
+version: "3.1"
+
+stories:
+  - story: "greet user"
+    steps:
+      - intent: "greet"
+      - action: "utter_greet"
+
+  - story: "ask about services"
+    steps:
+      - intent: "ask_service"
+      - action: "utter_services"
+
+  - story: "provide services"
+    steps:
+      - intent: "ask_service"
+      - action: "utter_services"
+
+  - story: "provide service page link"
+    steps:
+      - intent: "ask_service_page"
+      - action: "utter_service_page"
+
+  - story: "provide review page link"
+    steps:
+      - intent: "ask_review_page"
+      - action: "utter_review_page"
+
+  - story: "provide contact page link"
+    steps:
+      - intent: "ask_contact_page"
+      - action: "utter_contact_page"
+
+  - story: "provide social media links"
+    steps:
+      - intent: "ask_social_media"
+      - action: "utter_social_media"
+
+  - story: "goodbye user"
+    steps:
+      - intent: "goodbye"
+      - action: "utter_goodbye"
+
+  - story: "bot challenge"
+    steps:
+      - intent: "bot_challenge"
+      - action: "utter_iamabot"

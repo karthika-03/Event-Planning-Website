@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <!-- header section starts -->
+    <header class="ad-header">
+        <a href="#" class="logo"><span>3</span>Knots</a>
+
+        <!-- User Icon for showing dropdown -->
+        <div class="ad-icon" onclick="toggleDropdown()">
+            <i class="fas fa-user"></i>
+        </div>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+        <!-- Dropdown menu -->
+        <div id="dropdown" class="dropdown-content">
+            <a href="#" onclick="logout()">Logout</a>
+            <a href="#" onclick="toggleDropdown()">Cancel</a>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#user-details">User Details</a>
+        <a href="user_booking.html">User Booking</a>
+        <a href="user_reviews.html">User Reviews</a>
+        <a href="user_queries.html">User Queries</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        
+        <!-- User Details Section -->
+        <section id="user-details">
+            <h2>User Details</h2>
+            
+            <!-- Circle showing total users -->
+             
+            <div id="total-users" class="total-users-circle"></div>
+            
+            <!-- Table to show user details -->
+             <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>UID</th>
+                        <th>Email</th>
+                        <th>Display Name</th>
+                        <th>Role</th>
+                        <th>Created At</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+        <!-- User details will be populated here -->
+        </tbody>
+    </table>
+</section>
+        
+        <!-- User Booking Section -->
+        <section id="user-booking">
+            <h2>User Booking</h2>
+        </section>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

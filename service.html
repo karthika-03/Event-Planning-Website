@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTO</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+<!-- font awesome  cdn link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- custom css file link -->
+<link rel="stylesheet" href="css/services.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="css/formStyles.css">
+<link rel="stylesheet" href="css/chatbot.css">
+<link rel="stylesheet" href="css/translator.css">
+</head>
+<body>
+
+<!-- service section starts -->
+
+<section class="service" id="service">
+
+    <h1 class="heading" data-original="OUR SERVICES"> our <span>services</span></h1>
+
+    <div class="box-container">
+
+    <a href="venue.html" class="div_button">
+    <div class="box">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3 data-original="venue selection">venue selection</h3>
+        <p data-original="A request, a solicitation, or an attempt to get another person to join you at a specific event.">A request, a solicitation, or an attempt to get another person to join you at a specific event.</p>
+    </div>
+    </a>
+
+        <a href="invitationCard.html" class="div_button">
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3 data-original="invitation card">invitation card</h3>
+                <p data-original="A request, a solicitation, or an attempt to get another person to join you at a specific event.">A request, a solicitation, or an attempt to get another person to join you at a specific event.</p>
+            </div>
+        </a>
+
+        <a href="entertainment.html" class="div_button">
+            <div class="box">
+                <i class="fas fa-music"></i>
+                <h3 data-original="entertainment">entertainment</h3>
+                <p data-original="A request, a solicitation, or an attempt to get another person to join you at a specific event.">A request, a solicitation, or an attempt to get another person to join you at a specific event.</p>
+            </div>
+            </a>
+
+            <a href="food.html" class="div_button">
+                <div class="box">
+                    <i class="fas fa-utensils"></i>
+                    <h3 data-original="food and drinks">food and drinks</h3>
+                    <p data-original="A request, a solicitation, or an attempt to get another person to join you at a specific event.">A request, a solicitation, or an attempt to get another person to join you at a specific event.</p>
+                </div>
+                </a>
+
+                <a href="photo&video.html" class="div_button">
+                    <div class="box">
+                        <i class="fas fa-photo-video"></i>
+                        <h3 data-original="Photos & Videos">Photos & Videos</h3>
+                        <p data-original="A request, a solicitation, or an attempt to get another person to join you at a specific event.">A request, a solicitation, or an attempt to get another person to join you at a specific event.</p>
+                    </div>
+                    </a>
+                    
+                    <a href="decor.html" class="div_button">
+                        <div class="box">
+                            <i class="fas fa-birthday-cake"></i>
+                            <h3 data-original="decoration">decoration</h3>
+                            <p data-original="A request, a solicitation, or an attempt to get another person to join you at a specific event.">A request, a solicitation, or an attempt to get another person to join you at a specific event.</p>
+                        </div>
+                        </a>
+
+    </div>
+
+    <!-- Language toggle icon -->
+    <div id="language-toggle" onclick="toggleLanguage()">🌐</div>
+
+    <div id="chatbot-container">
+        <div id="chatbot-icon">💬</div>
+        <div id="chatbot-popup">
+            <div id="chatbot-header">
+                <span>Chat with us</span>
+                <button id="chatbot-close">&times;</button>
+            </div>
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Type your message..." />
+        </div>
+    </div>
+
+</section>
+
+<script src="js/cart.js"></script>
+<script src="js/form.js"></script>
+<script src="js/chatbot.js"></script>
+<script src="js/translator.js"></script>
+<!-- service section ends -->
+ </body>

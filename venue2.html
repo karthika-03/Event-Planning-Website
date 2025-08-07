@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namakkal</title>
+     <!---Custom CSS File--->
+    <link rel="stylesheet" href="css/venue2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/formStyles.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/translator.css">
+
+</head>
+<body>
+    <section class="nm" id="nm">
+
+        <h1 class="heading"> <span>N</span>amakkal</h1>
+    
+        <div class="box-container">
+            
+            <div class="box">
+                <img src="assests/venue/nm1.jpeg" alt="">
+                <h3 class="title">Venue-1</h3>
+                <div class="icons">
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="assests/venue/nm2.avif" alt="">
+                <h3 class="title">Venue-2</h3>
+            </div>
+
+            <div class="box">
+                <img src="assests/venue/nm3.webp" alt="">
+                <h3 class="title">Venue-3</h3>
+            </div>
+
+                <!-- Language toggle icon -->
+            <div id="language-toggle" onclick="toggleLanguage()">🌐</div>
+
+            <div id="chatbot-container">
+                <div id="chatbot-icon">💬</div>
+                <div id="chatbot-popup">
+                    <div id="chatbot-header">
+                        <span>Chat with us</span>
+                        <button id="chatbot-close">&times;</button>
+                    </div>
+                    <div id="chat-messages"></div>
+                    <input type="text" id="chat-input" placeholder="Type your message..." />
+                </div>
+            </div>
+
+            <script src="js/cart.js"></script>
+            <script src="js/form.js"></script>
+            <script src="js/chatbot.js"></script>
+            <script src="js/translator.js"></script>
+
+                
+</body>
+</html>

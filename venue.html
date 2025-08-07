@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue Selection</title>
+    <link rel="stylesheet" href="css/venue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/formStyles.css">
+    <link rel="stylesheet" href="css/translator.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+    <!-- Service section -->
+    <section class="vn" id="vn">
+        <h1 class="heading" data-original="OUR VENUES">our <span>venues</span></h1>
+        <div class="box-container">
+            <a href="venue1.html" class="div_button">
+                <div class="box" data-original="Tiruppur">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3 data-original="Tiruppur">Tiruppur</h3>
+                    <p data-original="Venue selection will determine the success of your event, the vibe you create.">
+                        Venue selection will determine the success of your event, the vibe you create.
+                    </p>
+                </div>
+            </a>
+            <a href="venue2.html" class="div_button">
+                <div class="box" data-original="Namakkal">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3 data-original="Namakkal">Namakkal</h3>
+                    <p data-original="Venue selection will determine the success of your event, the vibe you create.">
+                        Venue selection will determine the success of your event, the vibe you create.
+                    </p>
+                </div>
+            </a>
+            <a href="venue3.html" class="div_button">
+                <div class="box" id="venue3" data-original="Dharmapuri">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3 data-original="Dharmapuri">Dharmapuri</h3>
+                    <p data-original="Venue selection will determine the success of your event, the vibe you create.">
+                        Venue selection will determine the success of your event, the vibe you create.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Language toggle icon -->
+    <div id="language-toggle" onclick="toggleLanguage()">🌐</div>
+
+    <div id="chatbot-container">
+        <div id="chatbot-icon">💬</div>
+        <div id="chatbot-popup">
+            <div id="chatbot-header">
+                <span>Chat with us</span>
+                <button id="chatbot-close">&times;</button>
+            </div>
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Type your message..." />
+        </div>
+    </div>
+    
+
+    <!-- JavaScript files -->
+    <script src="js/cart.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/translator.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>

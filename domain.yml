@@ -1,0 +1,62 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_service
+  - ask_service_page
+  - ask_review_page
+  - ask_contact_page
+  - ask_social_media
+
+responses:
+  utter_greet:
+  - text: "Hello! Welcome to our wedding event planning chatbot. How can I assist you today?"
+
+  utter_goodbye:
+  - text: "Thank you for visiting! Have a wonderful day."
+
+  utter_services:
+  - text: |
+      We offer the following wedding services:
+      - Venue selection (Tirupur, Namakkal, Dharmapuri)
+      - Invitation card design
+      - Catering services
+      - Decoration
+      - Entertainment
+      - Photography and videography
+
+  utter_service_page:
+  - text: |
+      You can explore our services here: 
+      <a href="http://localhost/event-planner/service.html">Service Page</a>. 
+      Let me know if you need help!
+
+  utter_review_page:
+  - text: |
+      You can check out our reviews or submit feedback here: 
+      <a href="http://localhost/event-planner/review.html">Review Page</a>.
+
+  utter_contact_page:
+  - text: |
+      You can reach out to us via our contact page: 
+      <a href="http://localhost/event-planner/contact.html">Contact Us</a>.
+
+  utter_social_media:
+    - text: |
+        You can find us on:
+        - <a href="https://www.facebook.com/profile.php?id=100093949153767">Facebook</a>
+        - <a href="https://www.instagram.com/3__knots/">Instagram</a>
+        - Twitter (Currently Unavailable)
+
+  utter_iamabot:
+  - text: "I’m your virtual assistant, here to help with wedding planning!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

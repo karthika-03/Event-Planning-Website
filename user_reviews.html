@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/User_reviews.css">
+</head>
+<body>
+    <!-- header section starts -->
+    <header class="ad-header">
+        <a href="#" class="logo"><span>3</span>Knots</a>
+
+        <!-- User Icon for showing dropdown -->
+        <div class="ad-icon" onclick="toggleDropdown()">
+            <i class="fas fa-user"></i>
+        </div>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+        <!-- Dropdown menu -->
+        <div id="dropdown" class="dropdown-content">
+            <a href="#" onclick="logout()">Logout</a>
+            <a href="#" onclick="toggleDropdown()">Cancel</a>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="admin.html">User Details</a>
+        <a href="user_booking.html">User Booking</a>
+        <a href="user_reviews.html">User Reviews</a>
+        <a href="user_queries.html">User Queries</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        
+        <!-- User Details Section -->
+        <h2>Reviews Overview</h2>
+
+        <div style="text-align: center;">
+        <div id="totalReviewsCircle" style="
+            width: 100px;
+            height: 100px;
+            background-color: #4285f4;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            font-size: 24px;">
+            0
+        </div>
+        </div>
+
+        <h1>User Reviews</h1>
+        <div class="retable">
+        <table  id="reviewsTable">
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>User ID</th>
+            <th>Review</th>
+            <th>Rating</th>
+            <th>Created At</th>
+            <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Review data will be dynamically inserted here -->
+        </tbody>
+        </table>
+
+            <!-- Pagination controls -->
+            <div class="pagination-controls">
+                <button id="prevButton" class="pagination-btn" disabled>Previous</button>
+                <button id="nextButton" class="pagination-btn">Next</button>
+            </div>
+
+        </div>
+
+        
+    </div>
+
+    <script src="js/view_reviews.js"></script>
+</body>
+</html>
